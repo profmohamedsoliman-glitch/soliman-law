@@ -159,8 +159,7 @@ const translations = {
     ],
     practices: [
       { title: "Criminal Defense", desc: "Strategic defense in felonies.", fullContent: "Comprehensive defense in major felonies, white-collar crimes, and financial offenses." },
-      { title: "Corporate Law", desc: "Company formation and contracts.", fullContent: "We handle incorporation, M&A, and corporate governance for local and foreign investors." },
-      { title: "Civil Litigation", desc: "Complex disputes and compensation.", fullContent: "Representing clients in civil disputes, breach of contract, and property claims." },
+<LegalImage src="/logo.jpg" alt="M. Soliman Logo" ... />      { title: "Civil Litigation", desc: "Complex disputes and compensation.", fullContent: "Representing clients in civil disputes, breach of contract, and property claims." },
       { title: "Family Law", desc: "Divorce and inheritance.", fullContent: "Handling personal status matters with utmost discretion and legal expertise." },
       { title: "Cybercrimes", desc: "Digital reputation protection.", fullContent: "Legal action against cyber extortion, defamation, and hacking incidents." },
       { title: "Arbitration", desc: "Commercial dispute resolution.", fullContent: "Alternative dispute resolution for complex commercial conflicts." },
