@@ -392,6 +392,79 @@ export default function App() {
         </div>
       )}
 
+      {/* TESTIMONIALS */}
+      <section id="testimonials" className="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/black-felt.png')]"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <SectionTitle title={t.nav.testimonials} subtitle={lang === 'ar' ? 'ثقة عملائنا هي وسام نجاحنا' : 'Client Trust is Our Badge of Success'} dark={true} centered={true} />
+          <div className="flex overflow-x-auto pb-8 gap-6 hide-scrollbar snap-x">
+             {t.testimonials.map((review, i) => (
+               <div key={i} className="min-w-[300px] md:min-w-[400px] bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm snap-center hover:bg-white/10 transition duration-300">
+                 <div className="flex gap-1 mb-4 text-amber-500">{[1,2,3,4,5].map(s => <Star key={s} size={16} fill="currentColor" />)}</div>
+                 <p className="text-slate-300 italic mb-6 leading-relaxed">"{review.text}"</p>
+                 <div className="flex items-center gap-4">
+                   <div className="w-10 h-10 rounded-full bg-amber-600 flex items-center justify-center font-bold text-white">{review.name.charAt(0)}</div>
+                   <div><h4 className="font-bold text-white text-sm">{review.name}</h4><p className="text-xs text-slate-400">{review.role}</p></div>
+                 </div>
+               </div>
+             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT FORM */}
+      <section id="contact" className="py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <SectionTitle title={t.contact.title} subtitle={t.contact.subtitle} />
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+            {/* Contact Info */}
+            <div className="lg:col-span-1 space-y-8">
+               <div className="bg-white p-8 rounded-xl shadow-sm border-t-4 border-amber-500">
+                  <h4 className="font-bold text-xl text-slate-900 mb-6 flex items-center gap-2"><MapPin className="text-amber-600" /> {t.contact.offices}</h4>
+                  <div className="space-y-4">
+                    <div className="pl-4 rtl:pr-4 border-l-2 rtl:border-l-0 rtl:border-r-2 border-slate-200"><p className="text-slate-600 text-sm leading-relaxed">{t.contact.office1}</p></div>
+                    <div className="pl-4 rtl:pr-4 border-l-2 rtl:border-l-0 rtl:border-r-2 border-slate-200"><p className="text-slate-600 text-sm leading-relaxed">{t.contact.office2}</p></div>
+                  </div>
+               </div>
+               <div className="bg-slate-900 text-white p-8 rounded-xl shadow-lg">
+                  <h4 className="font-bold text-lg mb-4">{t.contact.call}</h4>
+                  <p className="text-3xl font-bold font-serif text-amber-500 mb-2" dir="ltr">{SITE_CONFIG.phone_display}</p>
+               </div>
+            </div>
+
+            {/* Form */}
+            <div className="lg:col-span-2 bg-white p-8 md:p-12 rounded-2xl shadow-lg border border-slate-100">
+               <h3 className="text-2xl font-bold text-slate-900 mb-8">{t.contact.formTitle}</h3>
+               {contactError && <div className="bg-red-50 text-red-600 p-4 rounded-lg mb-6 flex items-center gap-2"><AlertCircle size={20} /> {contactError}</div>}
+               <form className="grid grid-cols-1 md:grid-cols-2 gap-6" onSubmit={handleContactSubmit}>
+                 <div className="space-y-2">
+                   <label className="text-sm font-bold text-slate-700">{t.contact.inputs.name}</label>
+                   <input type="text" value={contactForm.name} onChange={(e) => setContactForm({...contactForm, name: e.target.value})} className="w-full p-4 bg-slate-50 rounded-lg border border-slate-200 focus:border-amber-500 outline-none transition" placeholder="..." />
+                 </div>
+                 <div className="space-y-2">
+                   <label className="text-sm font-bold text-slate-700">{t.contact.inputs.phone}</label>
+                   <input type="text" value={contactForm.phone} onChange={(e) => setContactForm({...contactForm, phone: e.target.value})} className="w-full p-4 bg-slate-50 rounded-lg border border-slate-200 focus:border-amber-500 outline-none transition" placeholder="+20..." dir="ltr" />
+                 </div>
+                 <div className="md:col-span-2 space-y-2">
+                   <label className="text-sm font-bold text-slate-700">{t.contact.inputs.subject}</label>
+                   <select value={contactForm.subject} onChange={(e) => setContactForm({...contactForm, subject: e.target.value})} className="w-full p-4 bg-slate-50 rounded-lg border border-slate-200 focus:border-amber-500 outline-none transition">
+                      {t.practices.map((p, i) => <option key={i} value={p.title}>{p.title}</option>)}
+                      <option value="Other">Other / أخرى</option>
+                   </select>
+                 </div>
+                 <div className="md:col-span-2 space-y-2">
+                   <label className="text-sm font-bold text-slate-700">{t.contact.inputs.msg}</label>
+                   <textarea rows="4" value={contactForm.msg} onChange={(e) => setContactForm({...contactForm, msg: e.target.value})} className="w-full p-4 bg-slate-50 rounded-lg border border-slate-200 focus:border-amber-500 outline-none transition resize-none"></textarea>
+                 </div>
+                 <div className="md:col-span-2">
+                   <button className="w-full bg-slate-900 text-white py-4 rounded-lg font-bold hover:bg-amber-600 transition shadow-lg flex justify-center items-center gap-2"><Send size={18} /> {t.contact.inputs.btn}</button>
+                 </div>
+               </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FOOTER */}
       <footer className="bg-slate-950 text-slate-400 py-12 border-t border-slate-800 text-center">
         <div className="flex justify-center gap-6 mb-8">
@@ -401,6 +474,34 @@ export default function App() {
         <p>{t.footer.text}</p>
       </footer>
 
+      {/* AI FAB */}
+      <div className="fixed bottom-6 right-6 z-40">
+        <button onClick={() => setAiOpen(!aiOpen)} className="group flex items-center justify-center w-14 h-14 bg-amber-600 text-white rounded-full shadow-2xl hover:scale-110 transition duration-300 hover:bg-amber-500 relative">
+          {aiOpen ? <X size={24} /> : <Bot size={28} />}
+          {!aiOpen && <span className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full animate-ping"></span>}
+        </button>
+        {aiOpen && (
+          <div className="absolute bottom-20 right-0 w-[340px] h-[500px] bg-white rounded-2xl shadow-2xl border border-slate-200 flex flex-col overflow-hidden animate-fade-in-up origin-bottom-right">
+             <div className="bg-slate-900 p-4 flex items-center gap-3 border-b border-slate-800"><div className="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center text-white"><Bot size={20} /></div><div><h4 className="text-white font-bold text-sm">{t.ai.fab}</h4><div className="flex items-center gap-1"><span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span><span className="text-xs text-slate-400">Online</span></div></div></div>
+             <div className="flex-1 bg-slate-50 p-4 overflow-y-auto space-y-4">
+                <div className="flex gap-2"><div className="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center shrink-0 text-amber-700"><Bot size={16}/></div><div className="bg-white p-3 rounded-2xl rounded-tl-none border border-slate-100 text-sm shadow-sm text-slate-700">{t.ai.welcome}</div></div>
+                {messages.map((m, i) => (
+                  <div key={i} className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}><div className={`max-w-[80%] p-3 rounded-2xl text-sm shadow-sm ${m.role === 'user' ? 'bg-slate-800 text-white rounded-tr-none' : 'bg-white border border-slate-100 text-slate-700 rounded-tl-none'}`}>{m.text}</div></div>
+                ))}
+             </div>
+             <div className="p-3 bg-white border-t">
+               <form className="flex gap-2" onSubmit={handleAiSend}>
+                 <input value={inputMsg} onChange={(e) => setInputMsg(e.target.value)} className="flex-1 bg-slate-100 border-0 rounded-full px-4 text-sm focus:ring-2 focus:ring-amber-500 outline-none" placeholder={t.ai.placeholder} />
+                 <button className="w-10 h-10 bg-amber-600 text-white rounded-full flex items-center justify-center hover:bg-amber-700 transition"><Send size={16} /></button>
+               </form>
+               <p className="text-[10px] text-center text-slate-400 mt-2">{t.ai.disclaimer}</p>
+             </div>
+          </div>
+        )}
+      </div>
+      <div className="hidden"><GlobeIcon /></div>
     </div>
   );
 }
+
+const GlobeIcon = ({ size }) => (<svg xmlns="http://www.w3.org/2000/svg" width={size || 24} height={size || 24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path></svg>);
