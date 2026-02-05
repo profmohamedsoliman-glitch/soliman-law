@@ -32,229 +32,90 @@ const translations = {
       { num: "+20", label: "عاماً خبرة" }, { num: "+1,500", label: "قضية رابحة" }, { num: "99%", label: "نجاح" }, { num: "+50M", label: "تسويات" }
     ],
     practices: [
-      { 
-        title: "الجنايات والجرائم الاقتصادية", 
-        desc: "دفاع استراتيجي أمام محاكم الجنايات والنقض.",
-        fullContent: "نقدم دفاعاً شاملاً في قضايا الجنايات الكبرى، وجرائم الأموال العامة، والرشوة، والاختلاس. نعتمد على استراتيجيات دقيقة في فحص الأدلة ومناقشة الشهود واستخراج الثغرات القانونية أمام محاكم الجنايات والنقض."
-      },
-      { 
-        title: "الشركات والاستثمار", 
-        desc: "تأسيس وحوكمة الشركات وصياغة العقود.",
-        fullContent: "نقدم خدمات تأسيس الشركات بكافة أنواعها، صياغة عقود الشراكة، عمليات الدمج والاستحواذ، وحوكمة الشركات لضمان الامتثال للقوانين الاستثمارية المصرية والدولية."
-      },
-      { 
-        title: "المنازعات المدنية", 
-        desc: "تمثيل الخصوم في النزاعات المدنية والتعويضات.",
-        fullContent: "نتولى كافة الدعاوى المدنية بما فيها قضايا التعويضات، فسخ العقود، المطالبات المالية، وحقوق الملكية الفكرية، مع التركيز على تحصيل حقوق الموكل بأسرع الطرق القانونية."
-      },
-      { 
-        title: "الأسرة والأحوال الشخصية", 
-        desc: "إدارة ملفات الأسرة والتركات بسرية.",
-        fullContent: "نعالج قضايا الأسرة (الطلاق، النفقات، الحضانة) وتقسيم التركات بحكمة وسرية تامة، مراعين الأبعاد الاجتماعية والنفسية لأطراف النزاع."
-      },
-      { 
-        title: "الجرائم الإلكترونية", 
-        desc: "حماية السمعة الرقمية وملاحقة المبتزين.",
-        fullContent: "خبرة متخصصة في التعامل مع جرائم الابتزاز الإلكتروني، السب والقذف عبر الإنترنت، واختراق الحسابات، وفقاً لأحدث قوانين تقنية المعلومات."
-      },
-      { 
-        title: "التحكيم الدولي", 
-        desc: "فض المنازعات التجارية والاستثمارية.",
-        fullContent: "تمثيل العملاء في قضايا التحكيم التجاري الدولي والمحلي كبديل سريع وفعال عن التقاضي العادي لفض النزاعات التجارية المعقدة."
-      },
+      { title: "الجنايات والجرائم الاقتصادية", desc: "دفاع استراتيجي أمام محاكم الجنايات والنقض.", fullContent: "دفاع شامل في الجنايات الكبرى وجرائم الأموال العامة." },
+      { title: "الشركات والاستثمار", desc: "تأسيس وحوكمة الشركات.", fullContent: "تأسيس الشركات وعقود الشراكة والاستحواذ." },
+      { title: "المنازعات المدنية", desc: "تمثيل الخصوم والتعويضات.", fullContent: "الدعاوى المدنية والتعويضات وحقوق الملكية." },
+      { title: "الأسرة والأحوال الشخصية", desc: "إدارة ملفات الأسرة والتركات.", fullContent: "قضايا الأسرة والتركات بسرية وحكمة." },
+      { title: "الجرائم الإلكترونية", desc: "حماية السمعة الرقمية.", fullContent: "ملاحقة الابتزاز الإلكتروني واختراق الحسابات." },
+      { title: "التحكيم الدولي", desc: "فض المنازعات التجارية.", fullContent: "التحكيم التجاري الدولي كبديل سريع للتقاضي." },
     ],
     library: {
       title: "المكتبة القانونية والأخبار",
       subtitle: "أحدث المقالات والتحليلات القانونية.",
       readMore: "اقرأ المقال كاملاً",
       items: [
-        {
-          id: 1,
-          date: "10 فبراير 2026",
-          author: "المستشار محمد سليمان",
-          category: "قانون الشركات",
-          title: "دليلك الشامل لتأسيس الشركات الناشئة",
-          excerpt: "تحليل قانوني دقيق لأهم الحوافز الاستثمارية التي أقرها المشرع المصري مؤخراً لدعم ريادة الأعمال.",
-          fullContent: "في ظل التعديلات التشريعية الأخيرة لعام 2026، أصبح تأسيس الشركات الناشئة في مصر يتمتع بحوافز ضريبية وإجرائية غير مسبوقة. يتناول هذا المقال بالتفصيل كيفية الاستفادة من الرخصة الذهبية، والإعفاءات الضريبية لمدة 5 سنوات، وكيفية صياغة عقود الشركاء (Shareholders Agreement) لحماية حقوق المؤسسين والمستثمرين على حد سواء. ننصح دائماً بالبدء بالكيان القانوني الصحيح لتجنب المشاكل المستقبلية."
-        },
-        {
-          id: 2,
-          date: "05 فبراير 2026",
-          author: "الفريق القانوني",
-          category: "الجرائم الإلكترونية",
-          title: "الابتزاز الإلكتروني: خطوات الحماية القانونية",
-          excerpt: "خطوات عملية وقانونية فورية يجب اتخاذها عند التعرض لأي تهديد رقمي.",
-          fullContent: "جريمة الابتزاز الإلكتروني هي جناية يعاقب عليها القانون المصري بالحبس والغرامة. إذا تعرضت للابتزاز، أول خطوة هي عدم الرضوخ للطلبات، ثم توثيق المحادثات (Screenshots) دون حذفها، والتوجه فوراً لمباحث الإنترنت لتحرير محضر. يقوم مكتبنا بمتابعة البلاغ وتقديم الادعاء المدني لضمان توقيع أقصى العقوبة على الجاني والحصول على تعويض مادي للأضرار النفسية."
-        },
-        {
-          id: 3,
-          date: "28 يناير 2026",
-          author: "المكتب الفني",
-          category: "قانون العقارات",
-          title: "خبايا عقود البيع: الابتدائي vs النهائي",
-          excerpt: "ما الفرق بين صحة التوقيع والتسجيل في الشهر العقاري؟ ولماذا العقد الابتدائي لا يكفي؟",
-          fullContent: "يعتقد الكثيرون أن العقد الابتدائي مع 'صحة التوقيع' كافٍ لإثبات الملكية، وهذا خطأ قانوني شائع. صحة التوقيع هي دعوى تحفظية تثبت فقط أن التوقيع صحيح ولا تمس أصل الحق. لنقل الملكية بشكل كامل وقانوني يمنع المنازعة، يجب تسجيل العقد في الشهر العقاري أو الحصول على حكم بصحة ونفاذ العقد. في هذا المقال نشرح الفرق بالتفصيل والمخاطر المترتبة على الاكتفاء بالعقود العرفية."
-        }
+        { id: 1, date: "10 فبراير 2026", author: "المستشار محمد سليمان", category: "قانون الشركات", title: "دليلك لتأسيس الشركات الناشئة", excerpt: "تحليل للحوافز الاستثمارية الجديدة.", fullContent: "شرح وافٍ لحوافز الاستثمار والرخصة الذهبية للشركات الناشئة...", image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" },
+        { id: 2, date: "05 فبراير 2026", author: "الفريق القانوني", category: "الجرائم الإلكترونية", title: "الابتزاز الإلكتروني: الحماية القانونية", excerpt: "خطوات قانونية فورية للتعامل مع التهديدات.", fullContent: "خطوات عملية لتوثيق الجريمة وتقديم البلاغ...", image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80" },
+        { id: 3, date: "28 يناير 2026", author: "المكتب الفني", category: "قانون العقارات", title: "خبايا عقود البيع: الابتدائي vs النهائي", excerpt: "الفرق بين صحة التوقيع والتسجيل.", fullContent: "لماذا لا يكفي العقد الابتدائي لنقل الملكية...", image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" }
       ]
     },
     founder: {
       title: "رسالة المؤسس",
-      text: "المحاماة ليست مجرد مهنة، بل هي رسالة لحماية الحقوق وصناعة الاستقرار. وإيماناً منا بأن الحق يُصان بالقوة والخبرة، أسسنا هذا الصرح القانوني لتقديم نموذج عالمي يجمع بين الفهم العميق للقوانين المحلية والرؤية الدولية الشاملة. إن هدفنا لا يقتصر على كسب القضايا فحسب، بل يتعداه لتقديم حلول استباقية تحمي طموحاتكم التجارية والشخصية."
+      text: "المحاماة رسالة لحماية الحقوق وصناعة الاستقرار. أسسنا هذا الصرح لتقديم نموذج عالمي يجمع بين الخبرة المحلية والرؤية الدولية. هدفنا حماية مستقبلك وتأمين مصالحك بالالتزام المطلق بالتميز."
     },
     testimonials: [
-      { name: "م. أحمد عبد العزيز", role: "رئيس مجلس إدارة", text: "احترافية غير مسبوقة. حسموا نزاعاً تجارياً معقداً لصالحنا." },
-      { name: "الشيخ عبدالله القحطاني", role: "مستثمر - السعودية", text: "المكتب كان الحصن القانوني لاستثماراتنا في مصر. دقة في العقود." },
-      { name: "أ. فاطمة المزروعي", role: "مديرة عمليات - دبي", text: "السرعة والشفافية تميزكم. انصح أي مستثمر بالتعامل معكم." },
+      { name: "م. أحمد عبد العزيز", role: "رئيس مجلس إدارة", text: "احترافية غير مسبوقة. حسموا نزاعاً تجارياً لصالحنا." },
+      { name: "الشيخ عبدالله القحطاني", role: "مستثمر", text: "المكتب كان الحصن القانوني لاستثماراتنا في مصر." },
+      { name: "أ. فاطمة المزروعي", role: "مديرة عمليات", text: "السرعة والشفافية تميزكم." },
     ],
     contact: {
-      title: "تواصل مع المستشار",
-      subtitle: "نستقبل استفساراتكم عبر القنوات الرسمية للمؤسسة",
+      title: "تواصل معنا",
+      subtitle: "عبر القنوات الرسمية",
       offices: "مكاتبنا",
-      office1: "القاهرة الجديدة - التجمع الخامس، بجوار المحكمة.",
-      office2: "القاهرة - المعادي/دار السلام، ١٧ مكرر ش ٦ أكتوبر.",
-      call: "اتصل بنا مباشرة",
+      office1: "القاهرة الجديدة، التجمع الخامس.",
+      office2: "المعادي/دار السلام، القاهرة.",
+      call: "اتصل بنا",
       formTitle: "طلب دراسة قضية",
       inputs: { name: "الاسم", phone: "الهاتف", subject: "نوع القضية", msg: "التفاصيل...", btn: "إرسال واتساب" }
     },
     payment: {
       title: "سداد الأتعاب",
       subtitle: "وسائل دفع آمنة",
-      methods: {
-        voda: "فودافون كاش",
-        insta: "InstaPay",
-        online: "دفع أونلاين (فيزا)"
-      },
+      methods: { voda: "فودافون كاش", insta: "InstaPay", online: "دفع أونلاين" },
       num: SITE_CONFIG.payment_number,
       copy: "نسخ",
       copied: "تم",
-      modal: {
-        title: "دفع أونلاين",
-        amount: "المبلغ",
-        payBtn: "ادفع الآن",
-        success: "تمت العملية بنجاح",
-        successMsg: "سيتم التواصل معك فوراً.",
-        close: "إغلاق"
-      }
+      modal: { title: "دفع أونلاين", amount: "المبلغ", payBtn: "ادفع الآن", success: "تمت العملية بنجاح", successMsg: "سيتم التواصل معك فوراً.", close: "إغلاق" }
     },
-    ai: {
-      fab: "المستشار الذكي",
-      welcome: "مرحباً بك في مؤسسة محمد سليمان. كيف نساعدك؟",
-      placeholder: "اكتب سؤالك...",
-      disclaimer: "رد آلي للمساعدة الأولية."
-    },
+    ai: { fab: "المستشار الذكي", welcome: "كيف يمكننا مساعدتك؟", placeholder: "اكتب سؤالك...", disclaimer: "رد آلي للمساعدة." },
     footer: { text: "© 2026 مؤسسة المستشار محمد سليمان." }
   },
   en: {
     meta: { dir: 'ltr', fontTitle: 'Playfair Display', fontBody: 'Lato', title: "M. Soliman Law Firm" },
-    hero: {
-      title: "Insightful Vision.. Uncompromising Defense",
-      subtitle: "M. Soliman Law Firm. 20 years of crafting victory strategies in Egyptian and International courts.",
-      ctaMain: "Get Consultation",
-      ctaSec: "Contact Us",
-      badge: "Since 2006"
-    },
+    hero: { title: "Insightful Vision.. Uncompromising Defense", subtitle: "20 years of crafting victory strategies in Egyptian and International courts.", ctaMain: "Consult", ctaSec: "Contact", badge: "Since 2006" },
     nav: { home: "Home", about: "Firm", practices: "Practices", media: "Library", testimonials: "Clients", payment: "Payment", contact: "Contact" },
-    stats: [
-      { num: "+20", label: "Years" }, { num: "+1.5k", label: "Cases Won" }, { num: "99%", label: "Success" }, { num: "+50M", label: "Settlements" }
-    ],
+    stats: [{ num: "+20", label: "Years" }, { num: "+1.5k", label: "Cases" }, { num: "99%", label: "Success" }, { num: "+50M", label: "Settlements" }],
     practices: [
-      { title: "Criminal Defense", desc: "Strategic defense in felonies.", fullContent: "Comprehensive defense in major felonies, white-collar crimes, and financial offenses." },
-<LegalImage src="/logo.jpg" alt="M. Soliman Logo" ... />      { title: "Civil Litigation", desc: "Complex disputes and compensation.", fullContent: "Representing clients in civil disputes, breach of contract, and property claims." },
-      { title: "Family Law", desc: "Divorce and inheritance.", fullContent: "Handling personal status matters with utmost discretion and legal expertise." },
-      { title: "Cybercrimes", desc: "Digital reputation protection.", fullContent: "Legal action against cyber extortion, defamation, and hacking incidents." },
-      { title: "Arbitration", desc: "Commercial dispute resolution.", fullContent: "Alternative dispute resolution for complex commercial conflicts." },
+      { title: "Criminal Defense", desc: "Strategic defense in felonies.", fullContent: "Comprehensive defense in major felonies..." },
+      { title: "Corporate Law", desc: "Company formation.", fullContent: "Incorporation and M&A services..." },
+      { title: "Civil Litigation", desc: "Complex disputes.", fullContent: "Representing clients in civil disputes..." },
+      { title: "Family Law", desc: "Divorce and inheritance.", fullContent: "Handling personal status matters..." },
+      { title: "Cybercrimes", desc: "Digital protection.", fullContent: "Legal action against cyber crimes..." },
+      { title: "Arbitration", desc: "Dispute resolution.", fullContent: "Alternative dispute resolution..." },
     ],
     library: {
-      title: "Legal Library",
-      subtitle: "Latest legal updates and news.",
-      readMore: "Read Full Article",
+      title: "Legal Library", subtitle: "Latest news.", readMore: "Read More",
       items: [
-        {
-          id: 1,
-          date: "Feb 10, 2026",
-          author: "M. Soliman",
-          category: "Corporate",
-          title: "Startup Guide 2026",
-          excerpt: "Legal analysis of new investment incentives in Egypt.",
-          fullContent: "Full analysis of the new investment law and incentives for startups in Egypt..."
-        },
-        {
-          id: 2,
-          date: "Feb 05, 2026",
-          author: "Legal Team",
-          category: "Cybercrimes",
-          title: "Cyber Extortion Protection",
-          excerpt: "Steps to take if you face digital threats.",
-          fullContent: "Detailed steps on how to document evidence and file a report for cybercrimes..."
-        },
-        {
-          id: 3,
-          date: "Jan 28, 2026",
-          author: "Tech Office",
-          category: "Real Estate",
-          title: "Real Estate Contracts",
-          excerpt: "Primary vs. Final Contracts explained.",
-          fullContent: "Why signature validity is not enough for ownership transfer..."
-        }
+        { id: 1, date: "Feb 10", author: "M. Soliman", category: "Corporate", title: "Startup Guide", excerpt: "Investment incentives analysis.", fullContent: "Analysis of investment laws...", image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" },
+        { id: 2, date: "Feb 05", author: "Team", category: "Cyber", title: "Cyber Extortion", excerpt: "Protection steps.", fullContent: "How to handle extortion...", image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80" },
+        { id: 3, date: "Jan 28", author: "Tech Office", category: "Real Estate", title: "Contracts", excerpt: "Primary vs Final.", fullContent: "Real estate contract types...", image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" }
       ]
     },
-    founder: {
-      title: "Founder's Message",
-      text: "Law is a mission to protect rights. We established this firm to provide a global model combining deep local knowledge with international vision. Our goal is to protect your future."
-    },
-    testimonials: [
-      { name: "Eng. Ahmed A.", role: "CEO", text: "Unprecedented professionalism. Resolved our dispute quickly." },
-      { name: "Sheikh Abdullah", role: "Investor", text: "The firm was our legal fortress in Egypt." },
-      { name: "Ms. Fatima", role: "Manager", text: "Speed and transparency distinguish you." },
-    ],
-    contact: {
-      title: "Contact Us",
-      subtitle: "Reach out via our official channels",
-      offices: "Offices",
-      office1: "New Cairo, 5th Settlement.",
-      office2: "Maadi/Dar El Salam, Cairo.",
-      call: "Call Us",
-      formTitle: "Case Evaluation",
-      inputs: { name: "Name", phone: "Phone", subject: "Type", msg: "Details...", btn: "Send via WhatsApp" }
-    },
-    payment: {
-      title: "Payment",
-      subtitle: "Secure Methods",
-      methods: {
-        voda: "Vodafone Cash",
-        insta: "InstaPay",
-        online: "Credit Card"
-      },
-      num: SITE_CONFIG.payment_number,
-      copy: "Copy",
-      copied: "Copied",
-      modal: {
-        title: "Secure Payment",
-        amount: "Amount",
-        payBtn: "Pay Now",
-        success: "Success!",
-        successMsg: "We will contact you shortly.",
-        close: "Close"
-      }
-    },
-    ai: {
-      fab: "Smart Advisor",
-      welcome: "How can we help you legally?",
-      placeholder: "Your question...",
-      disclaimer: "Automated response."
-    },
+    founder: { title: "Founder's Message", text: "Law is a mission to protect rights. Our goal is to protect your future with absolute commitment to excellence." },
+    testimonials: [{ name: "Eng. Ahmed", role: "CEO", text: "Unprecedented professionalism." }, { name: "Sheikh Abdullah", role: "Investor", text: "Our legal fortress." }, { name: "Ms. Fatima", role: "Manager", text: "Speed and transparency." }],
+    contact: { title: "Contact Us", subtitle: "Reach out via our channels", offices: "Offices", office1: "New Cairo.", office2: "Maadi, Cairo.", call: "Call Us", formTitle: "Case Evaluation", inputs: { name: "Name", phone: "Phone", subject: "Type", msg: "Details...", btn: "Send via WhatsApp" } },
+    payment: { title: "Payment", subtitle: "Secure Methods", methods: { voda: "Vodafone Cash", insta: "InstaPay", online: "Credit Card" }, num: SITE_CONFIG.payment_number, copy: "Copy", copied: "Copied", modal: { title: "Secure Payment", amount: "Amount", payBtn: "Pay Now", success: "Success!", successMsg: "We will contact you shortly.", close: "Close" } },
+    ai: { fab: "Advisor", welcome: "How can we help?", placeholder: "Question...", disclaimer: "Automated response." },
     footer: { text: "© 2026 M. Soliman Law Firm." }
   }
 };
 
 // --- COMPONENTS ---
-
 const LegalImage = ({ src, alt, className, type = "generic" }) => {
   const [imgSrc, setImgSrc] = useState(src);
+  // Default fallbacks ONLY if the main image fails
   const fallbacks = {
     owner: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80", 
-    office: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80", 
-    books: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=800&q=80", 
     generic: "https://images.unsplash.com/photo-1436450412740-6b988f486c6b?auto=format&fit=crop&w=800&q=80" 
   };
   return <img src={imgSrc} alt={alt} className={className} onError={() => setImgSrc(fallbacks[type] || fallbacks.generic)} loading="lazy" width="100%" height="100%" />;
@@ -269,20 +130,18 @@ const SectionTitle = ({ title, subtitle, centered = true, dark = false }) => (
 );
 
 // --- MAIN APP ---
-
 export default function App() {
   const [lang, setLang] = useState('ar');
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [aiOpen, setAiOpen] = useState(false);
   const [paymentModalOpen, setPaymentModalOpen] = useState(false);
-  const [contentModalOpen, setContentModalOpen] = useState(null); // For Articles/Practices
+  const [contentModalOpen, setContentModalOpen] = useState(null);
   const [isProcessing, setIsProcessing] = useState(false);
   const [paymentSuccess, setPaymentSuccess] = useState(false);
   const [messages, setMessages] = useState([]);
   const [inputMsg, setInputMsg] = useState("");
   const [copied, setCopied] = useState("");
-  
   const [contactForm, setContactForm] = useState({ name: '', phone: '', subject: 'الجنايات', msg: '' });
   const [contactError, setContactError] = useState('');
 
@@ -290,21 +149,13 @@ export default function App() {
   const isRTL = lang === 'ar';
 
   useEffect(() => {
-    // FIX 1: Prevent Google Translate & Set Language Attributes
     document.documentElement.lang = lang;
     document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
-    document.body.className = "notranslate"; // Stop Translation
+    document.body.className = "notranslate";
     document.title = t.meta.title;
-    
-    // Add meta tag dynamically
     let meta = document.querySelector('meta[name="google"]');
-    if (!meta) {
-      meta = document.createElement('meta');
-      meta.name = "google";
-      document.head.appendChild(meta);
-    }
+    if (!meta) { meta = document.createElement('meta'); meta.name = "google"; document.head.appendChild(meta); }
     meta.content = "notranslate";
-
   }, [lang, t.meta, isRTL]);
 
   useEffect(() => {
@@ -313,46 +164,13 @@ export default function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleCopy = (text, key) => {
-    navigator.clipboard.writeText(text);
-    setCopied(key);
-    setTimeout(() => setCopied(""), 2000);
-  };
-
-  const handleAiSend = (e) => {
-    e.preventDefault();
-    if (!inputMsg.trim()) return;
-    const newMsgs = [...messages, { role: 'user', text: inputMsg }];
-    setMessages(newMsgs);
-    setInputMsg("");
-    setTimeout(() => {
-      setMessages([...newMsgs, { role: 'bot', text: t.ai.disclaimer }]);
-    }, 1000);
-  };
-
-  const handleContactSubmit = (e) => {
-    e.preventDefault();
-    if (!contactForm.name || !contactForm.phone) {
-      setContactError(lang === 'ar' ? 'أكمل البيانات' : 'Fill details'); return;
-    }
-    const msg = `*استشارة:*%0aالاسم: ${contactForm.name}%0aالهاتف: ${contactForm.phone}%0aالموضوع: ${contactForm.subject}%0a${contactForm.msg}`;
-    window.open(`https://wa.me/${SITE_CONFIG.whatsapp_number}?text=${msg}`, '_blank');
-  };
-
-  const handlePayment = (e) => {
-    e.preventDefault();
-    setIsProcessing(true);
-    setTimeout(() => { setIsProcessing(false); setPaymentSuccess(true); }, 2000);
-  };
-
-  // Generic content opener
-  const openContent = (item) => {
-    setContentModalOpen(item);
-  };
+  const handleCopy = (text, key) => { navigator.clipboard.writeText(text); setCopied(key); setTimeout(() => setCopied(""), 2000); };
+  const handleAiSend = (e) => { e.preventDefault(); if (!inputMsg.trim()) return; const newMsgs = [...messages, { role: 'user', text: inputMsg }]; setMessages(newMsgs); setInputMsg(""); setTimeout(() => { setMessages([...newMsgs, { role: 'bot', text: t.ai.disclaimer }]); }, 1000); };
+  const handleContactSubmit = (e) => { e.preventDefault(); if (!contactForm.name || !contactForm.phone) { setContactError(lang === 'ar' ? 'أكمل البيانات' : 'Fill details'); return; } const msg = `*استشارة:*%0aالاسم: ${contactForm.name}%0aالهاتف: ${contactForm.phone}%0aالموضوع: ${contactForm.subject}%0a${contactForm.msg}`; window.open(`https://wa.me/${SITE_CONFIG.whatsapp_number}?text=${msg}`, '_blank'); };
+  const handlePayment = (e) => { e.preventDefault(); setIsProcessing(true); setTimeout(() => { setIsProcessing(false); setPaymentSuccess(true); }, 2000); };
 
   return (
     <div className={`min-h-screen bg-white text-slate-900 font-sans selection:bg-amber-200 selection:text-amber-900 ${isRTL ? 'rtl' : 'ltr'}`}>
-      
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
         .font-serif { font-family: '${t.meta.fontTitle}', serif !important; }
@@ -378,7 +196,8 @@ export default function App() {
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
             <div className={`rounded overflow-hidden transition-all ${scrolled ? 'w-10 h-10' : 'w-14 h-14'}`}>
-               <LegalImage src="/1000414152.jpg" alt="Logo" className="w-full h-full object-contain" />
+               {/* Updated to use simple filename */}
+               <LegalImage src="/logo.jpg" alt="Logo" className="w-full h-full object-contain" />
             </div>
             <div className="text-white">
               <h1 className={`font-serif font-bold leading-none ${scrolled ? 'text-lg' : 'text-xl'}`}>{lang === 'ar' ? 'المستشار محمد سليمان' : 'M. SOLIMAN'}</h1>
@@ -392,7 +211,7 @@ export default function App() {
             <a href="#contact" className="bg-amber-600 hover:bg-amber-700 text-white px-5 py-2 rounded font-bold text-xs shadow-lg">{t.hero.ctaMain}</a>
           </div>
 
-          {/* FIX 2: Mobile Menu & Lang Switcher Visibility */}
+          {/* Mobile Menu & Lang */}
           <div className="lg:hidden flex items-center gap-4">
             <button onClick={() => setLang(l => l === 'ar' ? 'en' : 'ar')} className="text-white font-bold text-xs border border-white/30 px-2 py-1 rounded">{lang === 'ar' ? 'EN' : 'عربي'}</button>
             <button onClick={() => setMenuOpen(true)} className="text-white"><Menu size={28} /></button>
@@ -443,7 +262,8 @@ export default function App() {
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-16">
           <div className="lg:w-1/2 relative">
              <div className="relative z-10 rounded-xl overflow-hidden shadow-2xl border-4 border-white h-[500px]">
-                <LegalImage src="/1000414137.jpg" alt="Founder" className="w-full h-full object-cover" />
+                {/* Updated to use simple filename */}
+                <LegalImage src="/founder.jpg" alt="Founder" className="w-full h-full object-cover" />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900 p-8">
                   <p className="text-white font-serif text-2xl font-bold">{lang === 'ar' ? 'المستشار محمد سليمان' : 'M. Soliman'}</p>
                 </div>
@@ -466,8 +286,7 @@ export default function App() {
                 <Gavel className="text-amber-600 mb-4" size={32} />
                 <h3 className="text-xl font-bold mb-3">{p.title}</h3>
                 <p className="text-slate-500 mb-4 text-sm">{p.desc}</p>
-                {/* FIX 3: Modal Trigger */}
-                <button onClick={() => openContent(p)} className="text-sm font-bold text-amber-600 flex items-center gap-1 hover:gap-2 transition cursor-pointer">
+                <button onClick={() => setContentModalOpen(p)} className="text-sm font-bold text-amber-600 flex items-center gap-1 hover:gap-2 transition cursor-pointer">
                   {lang === 'ar' ? 'اقرأ المزيد' : 'Read More'} <ArrowRight size={16} />
                 </button>
               </div>
@@ -488,8 +307,7 @@ export default function App() {
                   <div className="text-xs text-amber-600 font-bold mb-2">{item.category}</div>
                   <h3 className="font-bold text-lg mb-3">{item.title}</h3>
                   <p className="text-sm text-slate-500 mb-4">{item.excerpt}</p>
-                  {/* FIX 3: Modal Trigger */}
-                  <button onClick={() => openContent(item)} className="text-sm font-bold text-slate-900 flex items-center gap-2 cursor-pointer hover:text-amber-600">
+                  <button onClick={() => setContentModalOpen(item)} className="text-sm font-bold text-slate-900 flex items-center gap-2 cursor-pointer hover:text-amber-600">
                     <BookOpen size={16} /> {t.library.readMore}
                   </button>
                 </div>
@@ -499,7 +317,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* CONTENT MODAL (NEW) */}
+      {/* CONTENT MODAL */}
       {contentModalOpen && (
         <div className="fixed inset-0 z-[100] bg-slate-900/90 backdrop-blur-sm flex items-center justify-center p-4">
           <div className="bg-white w-full max-w-2xl max-h-[80vh] overflow-y-auto rounded-2xl shadow-2xl p-8 relative animate-pop-in">
@@ -521,26 +339,23 @@ export default function App() {
         </div>
       )}
 
-      {/* PAYMENT & CONTACT sections kept similar but shortened for brevity, ensuring functionality */}
+      {/* PAYMENT */}
       <section id="payment" className="py-24 bg-slate-50">
         <div className="container mx-auto px-4">
           <SectionTitle title={t.payment.title} subtitle={t.payment.subtitle} centered={true} />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-             {/* Voda */}
              <div className="bg-white p-6 rounded-xl shadow-sm text-center">
                <Smartphone className="mx-auto text-red-600 mb-4" size={32}/>
                <h3 className="font-bold mb-2">{t.payment.methods.voda}</h3>
                <p className="font-mono text-xl mb-4" dir="ltr">{t.payment.num}</p>
                <button onClick={() => handleCopy(t.payment.num, 'voda')} className="bg-slate-100 w-full py-2 rounded font-bold hover:bg-slate-200">{copied === 'voda' ? t.payment.copied : t.payment.copy}</button>
              </div>
-             {/* Insta */}
              <div className="bg-gradient-to-br from-purple-600 to-pink-600 text-white p-6 rounded-xl shadow-lg text-center transform md:-translate-y-4">
                <Send className="mx-auto mb-4" size={32}/>
                <h3 className="font-bold mb-2">{t.payment.methods.insta}</h3>
                <p className="font-mono text-xl mb-4" dir="ltr">{t.payment.num}</p>
                <button onClick={() => handleCopy(t.payment.num, 'insta')} className="bg-white/20 w-full py-2 rounded font-bold hover:bg-white/30">{copied === 'insta' ? t.payment.copied : t.payment.copy}</button>
              </div>
-             {/* Online */}
              <div className="bg-white p-6 rounded-xl shadow-sm text-center">
                <CreditCard className="mx-auto text-slate-600 mb-4" size={32}/>
                <h3 className="font-bold mb-2">{t.payment.methods.online}</h3>
